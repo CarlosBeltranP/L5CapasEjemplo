@@ -9,20 +9,12 @@
 </head>
 <body>
 
-	<table>
-		<tr>
-			<th>Name</th>
-			<th>Last Name</th>
-			<th>Age</th>
-			<th>Status</th>
-		</tr>
-		<tr>
-			<td>${students.sName}</td>
-			<td>${students.lName}</td>
-			<td>${students.sAge}</td>
-			<td>${students.activoDelegate}</td>
-		</tr>	
-			
-	</table>
+	<form action="${pageContext.request.contextPath}/formData" method="post">
+		<label>Ingrese un ID: </label><input type="text" name="id"><br>
+		
+		<input type="submit" value="Enviar">
+	</form>
+	
+	
 </body>
 </html>
